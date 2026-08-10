@@ -18,3 +18,5 @@ sentence-transformers
 langchain-groq
 
 python-multipart
+
+pytest

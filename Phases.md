@@ -2,37 +2,75 @@
 
 ## Phase 0 — Project Foundation
 
-Status: 🟢 In Progress
+Status: 🟢 Complete
 
 * [x] Create project directory.
 * [x] Create backend structure.
 * [x] Create frontend directory.
 * [x] Create test directory.
 * [x] Create project documentation.
-* [ ] Initialize Git repository.
-* [ ] Create virtual environment.
-* [ ] Configure dependencies.
-* [ ] Configure environment variables.
+* [x] Initialize Git repository.
+* [x] Create virtual environment.
+* [x] Configure dependencies.
+* [x] Configure environment variables.
+
 
 ## Phase 1 — Legal Document Collection
 
-Status: ⚪ Not Started
+Status: 🟢 Complete
 
-* [ ] Obtain reliable Constitution of Pakistan document.
-* [ ] Obtain Pakistan Penal Code document.
-* [ ] Obtain Contract Act document.
-* [ ] Obtain PECA/cybercrime legislation document.
-* [ ] Verify document quality.
-* [ ] Store documents under `backend/data/documents/`.
+### Objective
+
+Collect and verify a small, reliable initial corpus of Pakistani legal documents for the RAG system.
+
+### Completed
+
+* [x] Identify authoritative sources.
+* [x] Obtain Constitution of Pakistan.
+* [x] Obtain Pakistan Penal Code.
+* [x] Obtain Contract Act, 1872.
+* [x] Obtain PECA / relevant cybercrime legislation.
+* [x] Store documents under `backend/data/documents/`.
+* [x] Verify PDF files.
+* [x] Verify that the PDFs contain extractable text.
+* [x] Record document provenance in `backend/data/documents/SOURCES.md`.
+
+### Initial Corpus
+
+```text
+backend/data/documents/
+│
+├── constitution_of_pakistan.pdf
+├── pakistan_penal_code.pdf
+├── contract_act.pdf
+├── peca.pdf
+└── SOURCES.md
+```
 
 ## Phase 2 — Document Loading
 
-Status: ⚪ Not Started
+Status: 🟢 Complete
 
-* [ ] Implement LangChain PDF loader.
-* [ ] Implement supported text/Markdown loaders if required.
-* [ ] Extract document metadata.
-* [ ] Test document loading.
+### Completed
+
+- [x] Implement LangChain PDF document loader.
+- [x] Load all PDF documents from the legal document directory.
+- [x] Convert PDF pages into LangChain `Document` objects.
+- [x] Preserve source filename metadata.
+- [x] Preserve page metadata.
+- [x] Verify extracted document content.
+- [x] Create automated loader tests.
+- [x] Run loader tests successfully.
+
+### Result
+
+The four legal PDFs are successfully converted into LangChain `Document` objects.
+
+Total loaded documents/pages: **518**
+
+### Next Phase
+
+**Phase 3 — Text Splitting**
 
 ## Phase 3 — Text Splitting
 
@@ -142,7 +180,7 @@ Status: ⚪ Not Started
 
 ## Current Milestone
 
-**Phase 0 — Project Foundation**
+**Phase 1 — Legal Document Collection**
 
 The initial project structure and documentation have been created.
 
