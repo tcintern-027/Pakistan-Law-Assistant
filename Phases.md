@@ -1,8 +1,8 @@
-# Pakistan Law Assistant - Development Phases
+# Pakistan Law Assistant — Development Phases
 
-## Phase 0 - Project Foundation
+## Phase 0 — Project Foundation
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 * [x] Create project directory.
 * [x] Create backend structure.
@@ -19,9 +19,9 @@
 
 ---
 
-# Phase 1 - Legal Document Collection
+# Phase 1 — Legal Document Collection
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 ## Objective
 
@@ -54,19 +54,19 @@ The project must not claim that this specific PDF contains amendments through No
 
 ```text
 backend/data/documents/
-|
-|-- constitution_of_pakistan.pdf
-|-- pakistan_penal_code.pdf
-|-- contract_act.pdf
-|-- peca.pdf
-`-- SOURCES.md
+│
+├── constitution_of_pakistan.pdf
+├── pakistan_penal_code.pdf
+├── contract_act.pdf
+├── peca.pdf
+└── SOURCES.md
 ```
 
 ---
 
-# Phase 2 - Document Loading
+# Phase 2 — Document Loading
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 ## Objective
 
@@ -96,9 +96,9 @@ The four legal PDFs were successfully converted into:
 
 ---
 
-# Phase 3 - Text Splitting
+# Phase 3 — Text Splitting
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 ## Objective
 
@@ -116,21 +116,29 @@ Split page-level legal documents into retrieval-friendly chunks while preserving
 * [x] Verify important legal provisions after splitting.
 * [x] Verify Article 10A remains available after chunking.
 
-## Result
+## Verification
 
-The corpus was split into:
+Article 10A was found in:
 
 ```text
-1,663 retrieval chunks
+Source: Constitution of Pakistan.pdf
+Page: 25
+Chunk ID: chunk_00048
 ```
 
-Article 10A was successfully located during chunk verification.
+The chunk contained the actual Article 10A provision concerning:
+
+```text
+fair trial and due process
+```
+
+This confirmed that the splitting process preserves important legal provisions.
 
 ---
 
-# Phase 4 - Embeddings and ChromaDB
+# Phase 4 — Embeddings and ChromaDB
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 ## Objective
 
@@ -147,9 +155,18 @@ Generate vector embeddings for legal chunks and persist them in ChromaDB for sem
 * [x] Preserve document metadata.
 * [x] Verify persisted vectors.
 * [x] Test similarity search.
-* [x] Index all 1,663 chunks successfully.
+* [x] Index the complete legal corpus.
 
-## Configuration
+## Latest Indexing Result
+
+The legal corpus was successfully indexed:
+
+```text
+Loaded pages: 518
+Created chunks: 1663
+ChromaDB documents: 1663
+Indexing complete.
+```
 
 Embedding model:
 
@@ -169,20 +186,11 @@ Collection:
 pakistan_law_documents
 ```
 
-## Indexing Result
-
-```text
-Loaded pages: 518
-Created chunks: 1663
-ChromaDB documents: 1663
-Indexing status: Complete
-```
-
 ---
 
-# Phase 5 - Hybrid Retriever
+# Phase 5 — Hybrid Retriever
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 ## Objective
 
@@ -204,7 +212,7 @@ Retrieve relevant legal chunks using semantic similarity and legal-aware lexical
 * [x] Test PECA queries.
 * [x] Test Contract Act queries.
 * [x] Fix retriever circular/self-import issue.
-* [x] Successfully execute hybrid retriever tests.
+* [x] Successfully execute retriever tests.
 
 ## Current Retriever
 
@@ -229,11 +237,28 @@ Section 302
 
 receive stronger matching weight.
 
+## Retrieval Verification
+
+Hybrid retrieval was tested against multiple legal queries.
+
+Examples included:
+
+```text
+Article 10A
+Section 302
+Kidnapping
+PECA real-time collection
+Contract Act provisions
+Private defence
+```
+
+The retriever successfully returned relevant legal chunks from the indexed corpus.
+
 ---
 
-# Phase 6 - LLM and RAG Service
+# Phase 6 — LLM and RAG Service
 
-**Status: COMPLETE**
+**Status: 🟢 Complete**
 
 ## Objective
 
@@ -241,117 +266,211 @@ Generate grounded legal answers from retrieved Pakistani legal documents using G
 
 ## Completed
 
-* [x] Configure LLM.
+* [x] Configure Groq LLM.
 * [x] Verify Groq integration.
 * [x] Create legal RAG prompt.
 * [x] Implement RAG service.
-* [x] Pass retrieved context to the LLM.
+* [x] Pass retrieved context to LLM.
 * [x] Generate grounded answers.
 * [x] Add source information.
-* [x] Add page-level source metadata.
+* [x] Add page-level citations.
+* [x] Handle empty questions.
 * [x] Add legal disclaimer.
 * [x] Test complete RAG pipeline.
+* [x] Test multiple legal questions.
 
-## Verified End-to-End Pipeline
+## Implemented Components
+
+```text
+backend/app/llm.py
+backend/app/prompt.py
+backend/app/services/rag_service.py
+backend/app/test_llm.py
+backend/app/test_rag_service.py
+```
+
+## Working Pipeline
 
 ```text
 User Question
-      |
-      v
+      ↓
 Hybrid Retriever
-      |
-      v
+      ↓
 Relevant Legal Chunks
-      |
-      v
+      ↓
 Legal RAG Prompt
-      |
-      v
+      ↓
 Groq LLM
-      |
-      v
+      ↓
 Grounded Legal Answer
-      |
-      v
-Sources + Page Metadata
-      |
-      v
+      ↓
+Sources + Page Citations
+      ↓
 Legal Disclaimer
 ```
 
-## RAG Test Result
+## RAG Verification
 
-The standalone RAG test successfully answered:
+The complete RAG pipeline was successfully tested with:
+
+### Article 10A
 
 ```text
+Question:
 What does Article 10A of the Constitution of Pakistan provide?
 ```
 
-The generated answer correctly identified:
+The system generated a grounded answer identifying the right to a fair trial and returned Constitution source information.
+
+### Pakistan Penal Code Section 302
 
 ```text
-Article 10A provides for the right to a fair trial.
+Question:
+What is Section 302 of the Pakistan Penal Code?
 ```
 
-The response included:
+The system generated a grounded answer describing the punishment provisions for qatl-i-amd and returned relevant Pakistan Penal Code sources.
+
+### PECA Real-Time Collection
 
 ```text
-Legal basis:
-Article 10A
-
-Source:
-Constitution of Pakistan.pdf, Page 4
+Question:
+What does PECA say about real-time collection of information?
 ```
 
-The test also returned multiple retrieved source chunks from the Constitution.
+The system generated a grounded answer based on Section 39 and returned PECA source and page information.
 
-## Phase 6 Verification
+## Result
+
+The core RAG pipeline is working successfully:
 
 ```text
-RAG pipeline status: PASSED
-Question retrieval: PASSED
-Legal answer generation: PASSED
-Source metadata: PASSED
-Page metadata: PASSED
-Legal disclaimer: PASSED
+Question
+   ↓
+Retrieval
+   ↓
+Context
+   ↓
+Groq
+   ↓
+Grounded Answer
+   ↓
+Sources
 ```
 
 ---
 
-# Phase 7 - FastAPI
+# Phase 7 — FastAPI
 
-**Status: NOT STARTED**
+**Status: 🔵 In Progress**
 
 ## Objective
 
-Expose the completed RAG service through a production-ready FastAPI backend.
+Expose the completed RAG service through a structured FastAPI backend.
 
-## Tasks
+## Core API Completed
 
-* [ ] Create FastAPI application.
-* [ ] Implement `/health`.
-* [ ] Implement `/ask`.
-* [ ] Add request schemas.
-* [ ] Add response schemas.
-* [ ] Connect `/ask` to the RAG service.
-* [ ] Add document endpoints.
-* [ ] Configure CORS.
-* [ ] Test using Swagger.
-* [ ] Test error handling.
-* [ ] Verify API responses and sources.
+* [x] Create FastAPI application.
+* [x] Implement `/health`.
+* [x] Implement `/ask`.
+* [x] Add request schemas.
+* [x] Add response schemas.
+* [x] Connect `/ask` to the RAG service.
+* [x] Configure CORS.
+* [x] Test using Swagger.
+* [x] Test API using PowerShell.
+* [x] Test valid Article 10A request.
+* [x] Test valid Section 302 request.
+* [x] Test valid PECA request.
+* [x] Test invalid empty question.
+* [x] Verify HTTP 200 responses.
+* [x] Verify HTTP 422 validation response.
+* [x] Verify source metadata is returned.
 
-## Planned Initial API
+## Implemented API Components
+
+```text
+backend/app/main.py
+
+backend/app/routes/
+├── chat.py
+├── documents.py
+└── health.py
+
+backend/app/schemas/
+├── chat.py
+└── document.py
+```
+
+## Current API
 
 ```text
 GET  /health
 POST /ask
 ```
 
+### Health Endpoint
+
+```text
+GET /health
+```
+
+Verified successfully:
+
+```text
+200 OK
+```
+
+Response:
+
+```json
+{
+  "status": "healthy",
+  "service": "Pakistan Law Assistant"
+}
+```
+
+### Ask Endpoint
+
+```text
+POST /ask
+```
+
+Successfully tested with:
+
+```text
+Article 10A
+Section 302
+PECA real-time collection
+```
+
+### Validation
+
+Empty questions correctly return:
+
+```text
+422 Unprocessable Content
+```
+
+with Pydantic validation indicating that the question must contain at least one character.
+
+## Remaining Phase 7 Tasks
+
+* [ ] Implement document-management endpoints.
+* [ ] Implement `/documents`.
+* [ ] Add document-related schemas.
+* [ ] Connect document endpoints to document service.
+* [ ] Test document endpoints.
+* [ ] Review production CORS configuration.
+* [ ] Add API-level automated tests.
+* [ ] Verify API error handling comprehensively.
+* [ ] Complete Phase 7 documentation.
+
 ---
 
-# Phase 8 - React Frontend
+# Phase 8 — React Frontend
 
-**Status: NOT STARTED**
+**Status: ⚪ Not Started**
 
 ## Objective
 
@@ -374,12 +493,13 @@ Build a modern legal-assistant interface that communicates with the FastAPI back
 * [ ] Test frontend/backend communication.
 * [ ] Implement responsive design.
 * [ ] Implement dark/light mode if included in final design.
+* [ ] Implement document workspace if included in final design.
 
 ---
 
-# Phase 9 - Testing and Quality
+# Phase 9 — Testing and Quality
 
-**Status: NOT STARTED**
+**Status: ⚪ Not Started**
 
 ## Objective
 
@@ -407,9 +527,9 @@ Verify correctness, retrieval quality, API behavior, and frontend/backend integr
 
 ---
 
-# Phase 10 - Deployment
+# Phase 10 — Deployment
 
-**Status: NOT STARTED**
+**Status: ⚪ Not Started**
 
 ## Objective
 
@@ -431,9 +551,9 @@ Deploy the complete Pakistan Law Assistant application.
 
 ---
 
-# Phase 11 - GitHub Submission
+# Phase 11 — GitHub Submission
 
-**Status: NOT STARTED**
+**Status: ⚪ Not Started**
 
 ## Objective
 
@@ -460,58 +580,61 @@ Prepare the complete project for portfolio and GitHub submission.
 
 # Current Project Progress
 
-| Phase       | Component                 | Status       |
-| ----------- | ------------------------- | ------------ |
-| Phase 0     | Project Foundation        | COMPLETE     |
-| Phase 1     | Legal Document Collection | COMPLETE     |
-| Phase 2     | Document Loading          | COMPLETE     |
-| Phase 3     | Text Splitting            | COMPLETE     |
-| Phase 4     | Embeddings + ChromaDB     | COMPLETE     |
-| Phase 5     | Hybrid Retriever          | COMPLETE     |
-| **Phase 6** | **LLM + RAG Service**     | **COMPLETE** |
-| Phase 7     | FastAPI                   | NOT STARTED  |
-| Phase 8     | React Frontend            | NOT STARTED  |
-| Phase 9     | Testing + Quality         | NOT STARTED  |
-| Phase 10    | Deployment                | NOT STARTED  |
-| Phase 11    | GitHub Submission         | NOT STARTED  |
+| Phase       | Component                 | Status             |
+| ----------- | ------------------------- | ------------------ |
+| Phase 0     | Project Foundation        | 🟢 Complete        |
+| Phase 1     | Legal Document Collection | 🟢 Complete        |
+| Phase 2     | Document Loading          | 🟢 Complete        |
+| Phase 3     | Text Splitting            | 🟢 Complete        |
+| Phase 4     | Embeddings + ChromaDB     | 🟢 Complete        |
+| Phase 5     | Hybrid Retriever          | 🟢 Complete        |
+| Phase 6     | LLM + RAG Service         | 🟢 Complete        |
+| **Phase 7** | **FastAPI**               | **🔵 In Progress** |
+| Phase 8     | React Frontend            | ⚪ Not Started      |
+| Phase 9     | Testing + Quality         | ⚪ Not Started      |
+| Phase 10    | Deployment                | ⚪ Not Started      |
+| Phase 11    | GitHub Submission         | ⚪ Not Started      |
 
 ---
 
 # Current Milestone
 
-**Phase 6 - LLM and RAG Service COMPLETE**
+**Phase 7 — FastAPI**
 
-The project now has a working end-to-end RAG pipeline:
+The document ingestion, chunking, embedding, vector storage, retrieval, and LLM answer-generation pipeline is complete.
+
+The core FastAPI API layer is also implemented and tested.
+
+Current working API:
 
 ```text
-Legal PDFs
-    |
-    v
-Document Loading
-    |
-    v
-Text Splitting
-    |
-    v
-Embeddings
-    |
-    v
-ChromaDB
-    |
-    v
-Hybrid Retrieval
-    |
-    v
-Groq LLM
-    |
-    v
-Grounded Legal Answer
-    |
-    v
-Sources + Disclaimer
+GET  /health
+POST /ask
 ```
 
-The project is now ready for **Phase 7 - FastAPI**.
+The complete backend flow is now:
+
+```text
+Client
+   ↓
+FastAPI
+   ↓
+RAG Service
+   ↓
+Hybrid Retriever
+   ↓
+ChromaDB
+   ↓
+Retrieved Legal Context
+   ↓
+Groq LLM
+   ↓
+Grounded Answer
+   ↓
+Sources + Page Citations
+```
+
+The remaining work in Phase 7 is document-management API functionality and final API-level testing.
 
 ---
 
