@@ -400,11 +400,9 @@ The evaluation was run before and after improving the retrieval layer.
 | Metric | Initial | Final |
 |---|---:|---:|
 | Test Cases | 15 | 15 |
-| Correctness | 73.33% | 76.13% |
-| Relevance | 83.80% | 88.20% |
-| Groundedness | 77.13% | 82.07% |
-
-The final version improved across all three measured metrics.
+| Correctness | 68.07% | 76.13% |
+| Relevance | 86.40% | 88.20% |
+| Groundedness | 92.40% | 82.07% |
 
 ### Issues Identified
 
