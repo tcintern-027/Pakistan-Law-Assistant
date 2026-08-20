@@ -1,0 +1,685 @@
+[
+  {
+    "id": "q01",
+    "question": "What does Article 10A of the Constitution of Pakistan provide?",
+    "expected_answer": "Article 10A provides the right to a fair trial and due process.",
+    "key_facts": [
+      "Article 10A",
+      "fair trial",
+      "due process"
+    ],
+    "category": "direct",
+    "answer": "Answer:\nArticle 10A of the Constitution of Pakistan guarantees the **right to a fair trial** to every person.\n\nLegal basis:\n- **Article 10A – Right to fair trial** (Constitution of the Islamic Republic of Pakistan).\n\nSource:\n- Constitution of Pakistan, Page 4 (list of articles showing “10A. Right to fair trial”).\n\nDisclaimer:\nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 4,
+        "chunk_id": "chunk_00003",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 3,
+        "chunk_id": "chunk_00002",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 21,
+        "chunk_id": "chunk_00034",
+        "chunk_index": 1
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 210,
+        "chunk_id": "chunk_00574",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 214,
+        "chunk_id": "chunk_00582",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q02",
+    "question": "What is Section 302 of the Pakistan Penal Code?",
+    "expected_answer": "Section 302 provides punishments for qatl-i-amd, including death as qisas and other punishments specified by law.",
+    "key_facts": [
+      "Section 302",
+      "qatl-i-amd",
+      "death as qisas"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nSection 302 of the Pakistan Penal Code prescribes the punishment for *qatl‑i‑amd* (murder). It provides that a person who commits qatl‑i‑amd shall, subject to the provisions of the chapter, be punished in one of the following ways:\n\n1. **Death** as *qisas* (retributive punishment), or  \n2. **Death or imprisonment for life** as *taʿzīr* (discretionary punishment) if the proof required under Section 304 is not available, and  \n3. **Imprisonment** of any description for a term which may extend to **twenty‑five years** where, according to Islamic injunctions, the punishment of qisas is not applicable.\n\n**Legal basis:**  \n- **Section 302**, Pakistan Penal Code – “Punishment of qatl‑i‑amd”.\n\n**Source:**  \n- *Pakistan Penal Code*, PDF, page 106 (Section 302 text).  \n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 85,
+        "chunk_id": "chunk_01142",
+        "chunk_index": 3
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 77,
+        "chunk_id": "chunk_01103",
+        "chunk_index": 0
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 106,
+        "chunk_id": "chunk_01234",
+        "chunk_index": 2
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 16,
+        "chunk_id": "chunk_00880",
+        "chunk_index": 1
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00904",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q03",
+    "question": "What does PECA say about real-time collection of information?",
+    "expected_answer": "Section 39 of PECA allows a court, under specified conditions, to order real-time collection or recording of information for a specific criminal investigation, subject to statutory time limits.",
+    "key_facts": [
+      "Section 39",
+      "real-time collection",
+      "court order",
+      "criminal investigation",
+      "seven days"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nPECA (the Prevention of Electronic Crimes Act) expressly regulates the real‑time collection and recording of electronic information in the context of a criminal investigation.\n\n1. **Court‑ordered real‑time collection** – If a Court is satisfied, on the basis of information supplied by an authorized officer, that there are reasonable grounds to believe that the content of certain information is required for a specific criminal investigation, the Court may order a **designated agency** (as notified under the Investigation for Fair Trial Act, 2013) to collect or record that information from a service provider in real‑time. 【Source 2】\n\n2. **Time limit** – Such an order may not be made for a period longer than is “absolutely necessary” and, in any event, **shall not exceed seven days**. 【Source 1】\n\n3. **Extension of the period** – The Court may, on an application, **authorise an extension** of the real‑time collection period for a further specified time. 【Source 1】【Source 3】\n\n4. **Confidentiality** – The Court may also direct the designated agency to keep **confidential the fact** that the power has been exercised and any related information. 【Source 1】【Source 3】\n\n5. **Admissibility of the collected data** – Information obtained under the real‑time collection power is **admissible as evidence**, notwithstanding any contrary provision in any other law. 【Source 1】\n\n6. **Content of the application** – When seeking a real‑time collection order, the applicant must set out:\n   - Why the data is believed to be with the person controlling the information system;\n   - A specific description of the type of information sought;\n   - The offence under PECA for which the warrant is sought;\n   - If multiple disclosures are required, the reason and the number of disclosures needed. 【Source 3】\n\n7. **Service‑provider protections** – No service provider is liable for disclosing data **only to the extent** permitted by PECA, and they are **not obliged to proactively monitor** the material or content they host, route, or transmit. 【Source 1】\n\n**Legal basis:**  \n- **Section 39 – Real‑time collection and recording of information** (sub‑sections 1‑5).  \n- Related provisions on admissibility (sub‑section 2 of Section 39) and service‑provider liability (Section 39(4)‑(5) as reproduced in the excerpts).  \n\n**Source:** PECA (Prevention of Electronic Crimes Act), PDF, pages 31‑34 (relevant excerpts).  \n\n**Disclaimer:** This information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "PECA.pdf",
+        "page": 33,
+        "chunk_id": "chunk_01639",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 33,
+        "chunk_id": "chunk_01638",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 33,
+        "chunk_id": "chunk_01640",
+        "chunk_index": 2
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 31,
+        "chunk_id": "chunk_01629",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 34,
+        "chunk_id": "chunk_01642",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q04",
+    "question": "What fundamental right is protected by Article 14 of the Constitution of Pakistan?",
+    "expected_answer": "Article 14 protects the dignity of man and, subject to law, the privacy of home.",
+    "key_facts": [
+      "Article 14",
+      "dignity of man",
+      "privacy of home"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nThe legal documents provided do not contain the text of Article 14 of the Constitution of Pakistan, nor do they specify which fundamental right is protected by that article. Therefore, based on the available sources, I cannot identify the specific right protected by Article 14.\n\n**Legal basis:**  \nThe excerpts from the Constitution that are included in the context list fundamental rights such as security of person (Article 9), clean and healthy environment (Article 9A), safeguards as to arrest and detention (Article 10), right to a fair trial (Article 10A), and prohibition of slavery and forced labour (Article 11). However, no excerpt mentions Article 14.\n\n**Source:**  \n- Constitution of Pakistan (pages 4, 21, 41, 68, 223) – the provided excerpts do not include Article 14.\n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 4,
+        "chunk_id": "chunk_00003",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 21,
+        "chunk_id": "chunk_00035",
+        "chunk_index": 2
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 223,
+        "chunk_id": "chunk_00598",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 41,
+        "chunk_id": "chunk_00090",
+        "chunk_index": 2
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 68,
+        "chunk_id": "chunk_00166",
+        "chunk_index": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q05",
+    "question": "What is the punishment provided under Section 379 of the Pakistan Penal Code?",
+    "expected_answer": "Section 379 provides punishment for theft.",
+    "key_facts": [
+      "Section 379",
+      "theft"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nSection 379 of the Pakistan Penal Code provides that a person who commits theft shall be punished with imprisonment for a term which may extend to **three years**, or with a **fine**, or with **both** imprisonment and fine.\n\n**Legal basis:**  \n- **Section 379 – Punishment for theft** (Pakistan Penal Code).\n\n**Source:**  \n- *Pakistan Penal Code*, page 137 (the provision stating “Whoever commits theft shall be punished with imprisonment of either description for a term which may extend to three years, or with fine or with both.”)\n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 21,
+        "chunk_id": "chunk_00888",
+        "chunk_index": 0
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 137,
+        "chunk_id": "chunk_01350",
+        "chunk_index": 2
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00904",
+        "chunk_index": 0
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 54,
+        "chunk_id": "chunk_01002",
+        "chunk_index": 0
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00905",
+        "chunk_index": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q06",
+    "question": "What does PECA provide regarding unauthorized access to information systems?",
+    "expected_answer": "PECA criminalizes unauthorized access to an information system or data and provides the applicable punishment.",
+    "key_facts": [
+      "PECA",
+      "unauthorized access",
+      "information system",
+      "data"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nThe Pakistan Electronic Crimes Act (PECA) criminalises any person who, with a “dishonest intention” (i.e., intent to cause injury, wrongful gain, loss, or incitement to violence), gains access to an information system or data without authorisation.  \n\n- **General information systems or data** – The offence is punishable by imprisonment of up to **three months**, a fine of up to **Rs 50,000**, or both.  \n\n- **Critical‑infrastructure information systems or data** – Because of the heightened importance of such systems, the same unauthorised‑access conduct is punishable by a more severe penalty: imprisonment of up to **three years**, a fine of up to **Rs 1,000,000**, or both.  \n\nThus, PECA provides both a substantive prohibition on unauthorised access and a tiered penalty structure, with harsher sanctions for breaches involving critical‑infrastructure systems.\n\n**Legal basis:**  \n\n- **General unauthorised access:** “Unauthorized access to information system or data.— Whoever with dishonest intention gains unauthorized access to any information system or data shall be punished with imprisonment for a term which may extend to three months or with fine which may extend to fifty thousand rupees or with both.” – *PECA, Chapter II – Offences and Punishments, Section 3* (Source 2, p. 19).  \n\n- **Unauthorised access to critical‑infrastructure systems:** “Unauthorized access to critical infrastructure information system or data.— Whoever with dishonest intention gains unauthorized access to any critical infrastructure information system or data shall be punished with imprisonment which may extend to three years or with fine which may extend to one million rupees or with both.” – *PECA, Chapter II – Offences and Punishments, Section 6* (Source 1, p. 19).  \n\n- Definition of “dishonest intention”: “means intention to cause injury, wrongful gain or wrongful loss or harm to any person or to create hatred or incitement to violence” – *PECA, Definitions* (Source 3, p. 8).  \n\n**Source:** PECA (Pakistan Electronic Crimes Act), PDF excerpts provided.  \n\n**Disclaimer:** This information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "PECA.pdf",
+        "page": 19,
+        "chunk_id": "chunk_01579",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 19,
+        "chunk_id": "chunk_01578",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 8,
+        "chunk_id": "chunk_01538",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 30,
+        "chunk_id": "chunk_01625",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 8,
+        "chunk_id": "chunk_01537",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q07",
+    "question": "What is a contract under the Contract Act 1872?",
+    "expected_answer": "A contract is an agreement enforceable by law.",
+    "key_facts": [
+      "Contract Act 1872",
+      "agreement",
+      "enforceable by law"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nThe provided excerpts from the *Contract Act, 1872* do not contain the statutory definition of “contract.” While the Act’s Section 2 (commonly known to define a contract as “every agreement by which one party promises to do or to refrain from doing something, is enforceable by law”) is the relevant provision, that specific wording is not included in the supplied pages.\n\n**Legal basis:**  \nThe definition of a contract is set out in Section 2 of the *Contract Act, 1872*. However, the excerpted pages (including the pre‑amble, interpretation clause, illustrations, and agency provisions) do not contain this section.\n\n**Source:**  \n*Contract Act, 1872* – the provided PDF pages (Pages 5, 10, 11, 22) do not include Section 2.\n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 11,
+        "chunk_id": "chunk_00646",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 10,
+        "chunk_id": "chunk_00644",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 22,
+        "chunk_id": "chunk_00681",
+        "chunk_index": 0
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 170,
+        "chunk_id": "chunk_01486",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 5,
+        "chunk_id": "chunk_00634",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q08",
+    "question": "What are the requirements for a valid contract under the Contract Act 1872?",
+    "expected_answer": "A valid contract requires the elements specified by the Contract Act, including competent parties, free consent, lawful consideration and lawful object, subject to the statutory requirements.",
+    "key_facts": [
+      "competent parties",
+      "free consent",
+      "lawful consideration",
+      "lawful object"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nThe excerpts of the Contract Act, 1872 that have been provided do not contain a complete enumeration of the statutory requirements for a contract to be valid (such as offer, acceptance, consideration, intention to create legal relations, capacity, and free consent). The material includes some illustrative examples and references to related provisions (e.g., sections on agency, breach of contract, and specific performance), but it does not set out the essential elements of a valid contract.\n\n**Legal basis:**  \nThe supplied pages (e.g., the Preamble and Interpretation clause on page 11, illustrations on page 22, and various chapter headings on pages 5, 10, 23) do not list the statutory criteria for contract formation.\n\n**Source:**  \n- Contract Act, 1872 – pages 5, 10, 11, 22, 23 (as provided).\n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 11,
+        "chunk_id": "chunk_00646",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 10,
+        "chunk_id": "chunk_00644",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 22,
+        "chunk_id": "chunk_00681",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 5,
+        "chunk_id": "chunk_00634",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 23,
+        "chunk_id": "chunk_00685",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q09",
+    "question": "How does the right to a fair trial under Article 10A relate to criminal proceedings under the Pakistan Penal Code?",
+    "expected_answer": "Article 10A establishes the constitutional right to fair trial and due process, while the Pakistan Penal Code defines offences and punishments.",
+    "key_facts": [
+      "Article 10A",
+      "fair trial",
+      "due process",
+      "Pakistan Penal Code",
+      "offences",
+      "punishments"
+    ],
+    "category": "multi_document",
+    "answer": "**Answer:**  \nArticle 10A of the Constitution guarantees the right to a fair trial. In criminal matters that are prosecuted under the Pakistan Penal Code (PPC), this constitutional right operates as a **mandatory procedural safeguard**.  \n\n- A person charged with an offence under the PPC may invoke Article 10A to demand that the trial be conducted in accordance with the principles of fairness – such as the right to be heard, the right to legal representation, the right to an impartial tribunal, and the right to a reasoned judgment.  \n- If a trial under the PPC is alleged to violate these fair‑trial guarantees, the aggrieved person can **move the High Court** for enforcement of the fundamental right (see the constitutional provision that “the right to move a High Court for the enforcement of any of the Fundamental Rights… shall not be abridged”).  \n- The **Prevention of Electronic Crimes Act (PECA)**, in its Section 50(1), expressly states that its provisions are **not in derogation of the Pakistan Penal Code** and, by reference to the “Investigation for Fair Trial Act, 2013,” underscores that fair‑trial standards must be respected even when other statutes apply.  \n\nThus, while the PPC defines the substantive offences and penalties, the conduct of the trial must conform to the fair‑trial guarantees of Article 10A, and any breach can be challenged before a High Court.\n\n**Legal basis:**  \n- Constitution of Pakistan – Article 10A (right to a fair trial) and the provision allowing a High Court application for enforcement of fundamental rights (Constitution, p. 121).  \n- PECA, § 50(1) – “The provisions of this Act shall have effect not in derogation of the Pakistan Penal Code… and the Investigation for Fair Trial Act, 2013.”  \n\n**Source:**  \n- Constitution of Pakistan (page 121).  \n- PECA (page 37).  \n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 121,
+        "chunk_id": "chunk_00327",
+        "chunk_index": 1
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00904",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 37,
+        "chunk_id": "chunk_01655",
+        "chunk_index": 1
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00905",
+        "chunk_index": 1
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 59,
+        "chunk_id": "chunk_01023",
+        "chunk_index": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q10",
+    "question": "How do PECA and the Constitution address privacy and digital information?",
+    "expected_answer": "The Constitution protects relevant fundamental rights such as dignity and privacy, while PECA establishes offences and investigative mechanisms concerning information systems and electronic data.",
+    "key_facts": [
+      "Constitution",
+      "privacy",
+      "PECA",
+      "electronic data",
+      "information systems"
+    ],
+    "category": "multi_document",
+    "answer": "**Answer:**  \nBoth the Prevention of Electronic Crimes Act, 2016 (PECA) and the Constitution of Pakistan contain provisions that touch on the handling of digital information, but they do so from different perspectives.\n\n| Issue | PECA (Prevention of Electronic Crimes Act) | Constitution of Pakistan |\n|-------|--------------------------------------------|--------------------------|\n| **Definition of digital/e‑information** | Defines “electronic” to include a wide range of technologies (electrical, digital, magnetic, optical, biometric, etc.)【Source 1】 and defines “information” broadly to cover text, voice, video, software, databases, etc.【Source 1】. It also defines “identity information” as data that can authenticate or identify an individual or system【Source 1】. | The Constitution does not provide a definition of digital or electronic information. Its relevant excerpt deals with the regulation of broadcasting and tele‑casting infrastructure, not with privacy or data protection【Source 2】. |\n| **Scope of governmental powers over digital data** | • Grants authorized officers the power to **obtain, copy, and demand** access to data in a readable format, to require technical assistance, and to compel decryption of encrypted data【Source 3】. <br>• Sets procedural safeguards for search and seizure of information systems: officers must act with **proportionality**, preserve **integrity and secrecy**, and must not disrupt unrelated systems【Source 4】. <br>• Allows a **court‑ordered real‑time collection and recording** of information held by a service provider when there are reasonable grounds for a criminal investigation【Source 5】. | The Constitution allocates the **regulation of broadcasting and tele‑casting** to the Federal Government, with limited conditions on provincial powers, but it does not expressly regulate the collection, access, or protection of personal digital data【Source 2】. |\n| **Obligations and liabilities of service providers** | • Service providers are **not liable** for disclosing data **only to the extent** permitted by PECA【Source 5】. <br>• They have **no obligation** to proactively monitor or investigate the content they host, route, or transmit【Source 5】. | No comparable provision appears in the constitutional excerpt provided. |\n| **Protection of privacy / safeguards** | While PECA does not contain a standalone “right to privacy” clause, it embeds **procedural safeguards** (court authorization, proportionality, integrity, secrecy) that limit arbitrary intrusion into digital information. The definition of “dishonest intention” (intention to cause injury, wrongful gain, hatred, or incitement to violence) also narrows the scope of permissible investigations【Source 1】. | The Constitution excerpt supplied does not address privacy rights or data protection. It focuses on the division of powers over broadcasting infrastructure. |\n\n**Legal basis:**  \n\n- **PECA definitions** – “electronic”, “information”, “identity information”, “dishonest intention”【Source 1】.  \n- **Authorized officer powers** – Sections allowing access, decryption, and technical assistance【Source 3】.  \n- **Search and seizure safeguards** – Proportionality, integrity, secrecy requirements【Source 4】.  \n- **Service provider liability & monitoring** – No liability for permitted disclosures; no duty to monitor【Source 5】.  \n- **Court‑ordered real‑time collection** – Requires judicial satisfaction of reasonable grounds【Source 5】.  \n- **Constitutional provisions on broadcasting** – Federal control over transmitters and tele‑casting; provincial functions subject to federal conditions【Source 2】.\n\n**Disclaimer:**  \nThis information is drawn solely from the excerpts provided and is for educational purposes only. It does not constitute professional legal advice. If you require advice on a specific situation, consult a qualified legal practitioner.",
+    "sources": [
+      {
+        "source": "PECA.pdf",
+        "page": 8,
+        "chunk_id": "chunk_01538",
+        "chunk_index": 1
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 97,
+        "chunk_id": "chunk_00254",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 30,
+        "chunk_id": "chunk_01625",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 30,
+        "chunk_id": "chunk_01626",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 33,
+        "chunk_id": "chunk_01638",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q11",
+    "question": "What is the relationship between an agreement and a contract under the Contract Act 1872?",
+    "expected_answer": "An agreement is a broader concept, while a contract is an agreement enforceable by law.",
+    "key_facts": [
+      "agreement",
+      "contract",
+      "enforceable by law"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nUnder the Contract Act, 1872 an **agreement** is a meeting of minds where one party makes a promise to another. However, only those agreements that satisfy the statutory requirements (such as consideration, lawful object, and the capacity of parties) become **contracts**, i.e., agreements that are enforceable by law. Consequently, every contract is an agreement, but not every agreement qualifies as a contract; an agreement may be “void” if it lacks consideration or is based on an impossible event, and therefore it has no legal force.\n\n**Legal basis:**  \n- Illustration (a) on page 22 shows that a promise made “for no consideration” is a **void agreement**, not a contract.  \n- Illustration (b) on page 22 shows that a promise made with consideration (and properly documented) is a **contract**.  \n- Section 36 (page 26) states that an agreement contingent on an impossible event is **void**, indicating that such an agreement does not become a contract.\n\n**Source:**  \n- *Contract Act, 1872* – Page 22 (Illustrations a & b)  \n- *Contract Act, 1872* – Page 26 (Section 36, “Agreement contingent on impossible events void”)\n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 11,
+        "chunk_id": "chunk_00646",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 22,
+        "chunk_id": "chunk_00681",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 26,
+        "chunk_id": "chunk_00696",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 33,
+        "chunk_id": "chunk_00722",
+        "chunk_index": 0
+      },
+      {
+        "source": "Contract Act, 1872.pdf",
+        "page": 3,
+        "chunk_id": "chunk_00629",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q12",
+    "question": "What does the Constitution of Pakistan say about freedom of speech?",
+    "expected_answer": "The Constitution recognizes freedom of speech and expression subject to the limitations provided by law.",
+    "key_facts": [
+      "freedom of speech",
+      "freedom of expression",
+      "limitations"
+    ],
+    "category": "direct",
+    "answer": "**Answer:**  \nThe Constitution of Pakistan guarantees every citizen the right to freedom of speech and expression, as well as freedom of the press. However, this right is not absolute; it may be limited by “reasonable restrictions” that are imposed by law. Such restrictions may be applied in the interest of:\n\n- The glory of Islam  \n- The integrity, security, or defence of Pakistan (or any part thereof)  \n- Friendly relations with foreign states  \n- Public order  \n- Decency or morality  \n- Contempt of court  \n- Incitement to an offence  \n\nThus, while the Constitution affirms the fundamental right to speak freely, it also permits the state to impose lawful, reasonable limits for the purposes listed above.\n\n**Legal basis:**  \n- **Article 19**, Constitution of Pakistan – “Every citizen shall have the right to freedom of speech and expression, and there shall be freedom of the press, subject to any reasonable restrictions imposed by law…”.\n\n**Source:**  \n- *Constitution of Pakistan*, PDF, Page 29 (Article 19).\n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 29,
+        "chunk_id": "chunk_00057",
+        "chunk_index": 2
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 29,
+        "chunk_id": "chunk_00055",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 212,
+        "chunk_id": "chunk_00578",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 217,
+        "chunk_id": "chunk_00588",
+        "chunk_index": 0
+      },
+      {
+        "source": "Constitution of Pakistan.pdf",
+        "page": 210,
+        "chunk_id": "chunk_00574",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q13",
+    "question": "What Pakistani law establishes the offence of unauthorized access to a computer system?",
+    "expected_answer": "The Prevention of Electronic Crimes Act (PECA) addresses unauthorized access to information systems.",
+    "key_facts": [
+      "PECA",
+      "unauthorized access",
+      "information system"
+    ],
+    "category": "multi_document",
+    "answer": "**Answer:**  \nThe offence of *unauthorised access to an information system or data* is created by the **Pakistan Electronic Crimes Act (PECA)**.\n\n**Legal basis:**  \n- **Section 3, Chapter II** of PECA states: “*Unauthorized access to information system or data* – Whoever with dishonest intention gains unauthorised access to any information system or data shall be punished…”.  \n- The term “unauthorised access” is defined in the definitions clause of the Act (see **Clause xxx i**), meaning access to an information system or data that is not publicly available, without authorisation or in violation of the terms of authorisation.\n\n**Source:**  \n- *PECA.pdf*, Chapter II, Offences and Punishments, page 19.  \n- Definition of “unauthorised access” in *PECA.pdf*, page 10 (Clause xxx i).  \n\n**Disclaimer:**  \nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "PECA.pdf",
+        "page": 19,
+        "chunk_id": "chunk_01578",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 10,
+        "chunk_id": "chunk_01545",
+        "chunk_index": 2
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 10,
+        "chunk_id": "chunk_01544",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 25,
+        "chunk_id": "chunk_01606",
+        "chunk_index": 2
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 3,
+        "chunk_id": "chunk_01526",
+        "chunk_index": 0
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q14",
+    "question": "What does Pakistani law say about a hypothetical offence created by a fictional law called the Digital Crimes Act 2026?",
+    "expected_answer": "The provided legal corpus does not contain a Digital Crimes Act 2026, so the assistant should state that the information is unavailable rather than inventing an answer.",
+    "key_facts": [
+      "not in corpus",
+      "no fabricated answer",
+      "insufficient information"
+    ],
+    "category": "no_answer",
+    "answer": "Answer:\nThe legal documents provided do not contain any reference to a “Digital Crimes Act 2026” or to offences created under such a fictional statute. The only electronic‑crime legislation included in the sources is the **Prevention of Electronic Crimes Act, 2016 (PECA)**, together with its relationship to the Pakistan Penal Code, 1860 and other statutes. Consequently, Pakistani law, as reflected in the supplied material, does not address a hypothetical offence under a non‑existent “Digital Crimes Act 2026”.\n\nLegal basis:\n- No provision concerning a “Digital Crimes Act 2026” appears in the supplied excerpts from **PECA.pdf** (pages 6, 25, 35, 37) or **Pakistan Penal Code.pdf** (page 30).\n\nSource:\n- The provided documents (PECA and Pakistan Penal Code) contain no mention of a Digital Crimes Act 2026.\n\nDisclaimer:\nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "PECA.pdf",
+        "page": 25,
+        "chunk_id": "chunk_01606",
+        "chunk_index": 2
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00904",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 6,
+        "chunk_id": "chunk_01531",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 35,
+        "chunk_id": "chunk_01647",
+        "chunk_index": 1
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 37,
+        "chunk_id": "chunk_01655",
+        "chunk_index": 1
+      }
+    ],
+    "error": null
+  },
+  {
+    "id": "q15",
+    "question": "What does the Pakistan Penal Code say about a fictional Section 9999?",
+    "expected_answer": "The provided Pakistan Penal Code corpus does not establish a Section 9999, so the assistant should not fabricate its contents.",
+    "key_facts": [
+      "Section 9999",
+      "not in corpus",
+      "no fabricated answer"
+    ],
+    "category": "edge_case",
+    "answer": "Answer:\nThe provided excerpts from the Pakistan Penal Code do not contain any provision, article, or section numbered 9999. The sections included in the context cover topics such as the scope of the Code, extraterritorial application, offences against the state (e.g., sections 121 and 121A), and illustrative examples of jurisdiction, but there is no reference to a “Section 9999.”\n\nLegal basis:\nThe available legal documents (Pakistan Penal Code – pages 30, 31, 59) do not mention Section 9999.\n\nSource:\nPakistan Penal Code (PDF), pages 30, 31, 59 (as provided).\n\nDisclaimer:\nThis information is for educational purposes only and is not a substitute for professional legal advice.",
+    "sources": [
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00904",
+        "chunk_index": 0
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 30,
+        "chunk_id": "chunk_00905",
+        "chunk_index": 1
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 59,
+        "chunk_id": "chunk_01023",
+        "chunk_index": 1
+      },
+      {
+        "source": "Pakistan Penal Code.pdf",
+        "page": 31,
+        "chunk_id": "chunk_00910",
+        "chunk_index": 0
+      },
+      {
+        "source": "PECA.pdf",
+        "page": 25,
+        "chunk_id": "chunk_01606",
+        "chunk_index": 2
+      }
+    ],
+    "error": null
+  }
+]

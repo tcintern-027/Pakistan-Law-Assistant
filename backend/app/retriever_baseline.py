@@ -7,7 +7,6 @@ Retrieval strategy:
 3. Legal phrase matching
 4. Semantic + lexical reranking
 5. Lightweight penalties for poor chunks
-6. Source diversification for multi-document queries
 """
 
 import re
@@ -66,15 +65,6 @@ def _extract_query_terms(query: str) -> list[str]:
         "bail",
         "pre-arrest bail",
         "post-arrest bail",
-        "privacy",
-        "digital information",
-        "information systems",
-        "unauthorized access",
-        "lawful object",
-        "free consent",
-        "lawful consideration",
-        "competent parties",
-        "agreement enforceable by law",
     ]
 
     for phrase in important_phrases:
@@ -107,8 +97,6 @@ def _extract_query_terms(query: str) -> list[str]:
         "please",
         "can",
         "you",
-        "how",
-        "do",
     }
 
     words = re.findall(r"\b[a-z0-9]+\b", normalized)
@@ -125,7 +113,15 @@ def _reference_matches(
     document: Document,
 ) -> bool:
     """
-    Check whether a document contains the requested legal reference.
+    Check whether a document actually contains the legal reference.
+
+    Handles PDF formats such as:
+
+        Article 10A
+        10A.
+        10A.
+        Section 302
+        302.
     """
 
     text = _normalize(document.page_content)
@@ -140,6 +136,8 @@ def _reference_matches(
 
     number = match.group(2)
 
+    # Match the legal number itself rather than requiring
+    # the PDF to contain the literal phrase "Article 10A".
     return bool(
         re.search(
             rf"\b{re.escape(number)}\b",
@@ -155,6 +153,9 @@ def _exact_reference_documents(
     """
     Retrieve documents containing an exact legal reference directly
     from Chroma's document store.
+
+    This is important because semantic similarity can miss highly
+    specific legal references such as Article 10A.
     """
 
     references = _extract_legal_references(query)
@@ -223,6 +224,7 @@ def _lexical_score(
 
     for term in terms:
 
+        # Exact legal reference
         if term.startswith("article ") or term.startswith("section "):
             match = re.match(
                 r"(article|section)\s+(\d+[a-z]?)",
@@ -245,8 +247,11 @@ def _lexical_score(
         if occurrences == 0:
             continue
 
+        # Important legal phrase
         if " " in term:
             score += 8.0 * min(occurrences, 3)
+
+        # Normal keyword
         else:
             score += 1.0 * min(occurrences, 5)
 
@@ -268,127 +273,6 @@ def _document_penalty(document: Document) -> float:
         penalty += 2.0
 
     return penalty
-
-
-def _source_name(document: Document) -> str:
-    """
-    Return the normalized source/document name.
-    """
-    return (
-        document.metadata.get("source_file")
-        or document.metadata.get("source")
-        or "Unknown source"
-    )
-
-
-def _detect_requested_sources(query: str) -> list[str]:
-    """
-    Detect legal documents explicitly or implicitly referenced
-    by the query.
-
-    This is intentionally conservative. It only identifies sources
-    that are clearly mentioned or strongly associated with a legal
-    term in the question.
-    """
-
-    normalized = _normalize(query)
-
-    sources = []
-
-    if "peca" in normalized:
-        sources.append("PECA.pdf")
-
-    if (
-        "constitution" in normalized
-        or "article " in normalized
-        or "fundamental right" in normalized
-        or "freedom of speech" in normalized
-        or "fair trial" in normalized
-        or "privacy" in normalized
-    ):
-        sources.append("Constitution of Pakistan.pdf")
-
-    if (
-        "pakistan penal code" in normalized
-        or "ppc" in normalized
-        or "qatl" in normalized
-        or "section 302" in normalized
-        or "section 379" in normalized
-    ):
-        sources.append("Pakistan Penal Code.pdf")
-
-    if "contract act" in normalized:
-        sources.append("Contract Act, 1872.pdf")
-
-    return list(dict.fromkeys(sources))
-
-
-def _diversify_results(
-    ranked_documents: list[Document],
-    k: int,
-    requested_sources: list[str],
-) -> list[Document]:
-    """
-    Ensure that clearly multi-document questions receive coverage
-    from the requested legal sources.
-
-    The highest-ranked document from each requested source is promoted
-    first, followed by the remaining globally ranked documents.
-    """
-
-    if len(requested_sources) <= 1:
-        return ranked_documents[:k]
-
-    selected = []
-    selected_ids = set()
-
-    # First, reserve one strong result for each requested source.
-    for source in requested_sources:
-        for document in ranked_documents:
-            if _source_name(document) != source:
-                continue
-
-            chunk_id = document.metadata.get("chunk_id")
-
-            identifier = (
-                chunk_id
-                or (
-                    document.metadata.get("source_file"),
-                    document.metadata.get("page"),
-                    document.page_content[:100],
-                )
-            )
-
-            if identifier in selected_ids:
-                continue
-
-            selected.append(document)
-            selected_ids.add(identifier)
-            break
-
-    # Fill remaining positions using normal ranking.
-    for document in ranked_documents:
-        if len(selected) >= k:
-            break
-
-        chunk_id = document.metadata.get("chunk_id")
-
-        identifier = (
-            chunk_id
-            or (
-                document.metadata.get("source_file"),
-                document.metadata.get("page"),
-                document.page_content[:100],
-            )
-        )
-
-        if identifier in selected_ids:
-            continue
-
-        selected.append(document)
-        selected_ids.add(identifier)
-
-    return selected[:k]
 
 
 def retrieve_documents(
@@ -466,8 +350,6 @@ def retrieve_documents(
         if identifier:
             semantic_rank[identifier] = rank
 
-    references = _extract_legal_references(query)
-
     for document in candidates:
 
         chunk_id = document.metadata.get(
@@ -497,6 +379,10 @@ def retrieve_documents(
         )
 
         exact_reference_bonus = 0.0
+
+        references = _extract_legal_references(
+            query
+        )
 
         for reference in references:
             if _reference_matches(
@@ -528,19 +414,7 @@ def retrieve_documents(
         reverse=True,
     )
 
-    ranked_documents = [
+    return [
         document
-        for _, document in scored_candidates
+        for _, document in scored_candidates[:k]
     ]
-
-    # ---------------------------------------------------------
-    # 6. Source-aware diversification
-    # ---------------------------------------------------------
-
-    requested_sources = _detect_requested_sources(query)
-
-    return _diversify_results(
-        ranked_documents,
-        k,
-        requested_sources,
-    )

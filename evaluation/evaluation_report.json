@@ -1,0 +1,145 @@
+{
+  "summary": {
+    "test_cases": 15,
+    "correctness": 0.7613,
+    "relevance": 0.882,
+    "groundedness": 0.8207
+  },
+  "results": [
+    {
+      "id": "q01",
+      "question": "What does Article 10A of the Constitution of Pakistan provide?",
+      "category": "direct",
+      "correctness": 0.8,
+      "relevance": 1.0,
+      "groundedness": 1.0,
+      "reason": "The answer correctly states that Article 10A guarantees the right to a fair trial, which matches part of the expected answer, but it omits the due process component, making it partially incomplete. The response is directly on topic with no extraneous information, and the claim about the fair trial right is supported by the cited constitutional sources."
+    },
+    {
+      "id": "q02",
+      "question": "What is Section 302 of the Pakistan Penal Code?",
+      "category": "direct",
+      "correctness": 0.8,
+      "relevance": 1.0,
+      "groundedness": 0.6,
+      "reason": "The answer correctly identifies Section 302 as prescribing punishment for qatl‑i‑amd, including death as qisas, which matches the expected answer. It stays on topic, so relevance is high. However, it adds details (e.g., imprisonment up to 25 years) that are not typical of Section 302 and may not be supported by the cited sources, reducing groundedness and overall correctness."
+    },
+    {
+      "id": "q03",
+      "question": "What does PECA say about real-time collection of information?",
+      "category": "direct",
+      "correctness": 0.95,
+      "relevance": 0.9,
+      "groundedness": 0.9,
+      "reason": "The answer correctly states that Section 39 permits a court to order real‑time collection for a specific criminal investigation and notes the seven‑day limit, matching the expected answer. It adds extra but still relevant details (extensions, confidentiality, admissibility, application requirements, service‑provider protections) that are not required but do not detract from relevance. The statements are backed by cited PECA source excerpts, indicating good grounding, though a few specifics (e.g., reference to the Investigation for Fair Trial Act) may be beyond the cited text."
+    },
+    {
+      "id": "q04",
+      "question": "What fundamental right is protected by Article 14 of the Constitution of Pakistan?",
+      "category": "direct",
+      "correctness": 0.0,
+      "relevance": 0.6,
+      "groundedness": 0.9,
+      "reason": "The assistant does not provide the expected answer (dignity of man and privacy of home), so correctness is zero. It stays on the topic of Article 14, giving a relevant but incomplete response, thus moderate relevance. It correctly states that the provided sources do not contain Article 14, avoiding fabrication, so groundedness is high."
+    },
+    {
+      "id": "q05",
+      "question": "What is the punishment provided under Section 379 of the Pakistan Penal Code?",
+      "category": "direct",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "groundedness": 1.0,
+      "reason": "The answer correctly states the punishment under Section 379, directly addresses the question, and is supported by the cited sections of the Pakistan Penal Code."
+    },
+    {
+      "id": "q06",
+      "question": "What does PECA provide regarding unauthorized access to information systems?",
+      "category": "direct",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "groundedness": 1.0,
+      "reason": "The response accurately states that PECA criminalises unauthorised access to information systems or data and specifies the punishments, directly answering the question. All details are supported by the cited sections of the PECA document, and no extraneous information is included."
+    },
+    {
+      "id": "q07",
+      "question": "What is a contract under the Contract Act 1872?",
+      "category": "direct",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "groundedness": 0.1,
+      "reason": "The answer correctly states the definition of a contract as an agreement enforceable by law, matching the expected answer and staying on topic. However, the definition is not present in the provided source excerpts, so the response is not well‑grounded in the retrieved material."
+    },
+    {
+      "id": "q08",
+      "question": "What are the requirements for a valid contract under the Contract Act 1872?",
+      "category": "direct",
+      "correctness": 0.0,
+      "relevance": 0.3,
+      "groundedness": 0.6,
+      "reason": "The assistant does not provide the required elements (competent parties, free consent, lawful consideration, lawful object) and instead claims the source lacks this information, which is incorrect relative to the expected answer. It is somewhat relevant as it addresses the source material, but does not answer the question. The claim about source content is plausibly supported by the cited pages, giving moderate groundedness."
+    },
+    {
+      "id": "q09",
+      "question": "How does the right to a fair trial under Article 10A relate to criminal proceedings under the Pakistan Penal Code?",
+      "category": "multi_document",
+      "correctness": 0.75,
+      "relevance": 0.9,
+      "groundedness": 0.6,
+      "reason": "The answer correctly states that Article 10A provides a fair‑trial right and that the PPC defines offences and punishments, matching the expected answer. It adds extra details (e.g., PECA §50(1) and an Investigation for Fair Trial Act) that are not required and are likely not supported by the cited sources, reducing overall correctness and groundedness. The response stays on topic, so relevance is high."
+    },
+    {
+      "id": "q10",
+      "question": "How do PECA and the Constitution address privacy and digital information?",
+      "category": "multi_document",
+      "correctness": 0.2,
+      "relevance": 0.7,
+      "groundedness": 0.8,
+      "reason": "The answer contradicts the expected answer by stating the Constitution does not address privacy, whereas the expected answer says it protects privacy. It is largely on-topic but includes extra details, and it cites the provided sources, making it reasonably grounded despite the factual mismatch."
+    },
+    {
+      "id": "q11",
+      "question": "What is the relationship between an agreement and a contract under the Contract Act 1872?",
+      "category": "direct",
+      "correctness": 1.0,
+      "relevance": 0.95,
+      "groundedness": 0.95,
+      "reason": "The answer correctly states that a contract is an agreement enforceable by law, matching the expected answer. It stays on topic, providing only pertinent details about the relationship. The statements are backed by the cited sections and illustrations from the Contract Act 1872, so they are well‑grounded in the retrieved sources."
+    },
+    {
+      "id": "q12",
+      "question": "What does the Constitution of Pakistan say about freedom of speech?",
+      "category": "direct",
+      "correctness": 0.96,
+      "relevance": 0.94,
+      "groundedness": 0.95,
+      "reason": "The answer correctly states that the Constitution guarantees freedom of speech and expression subject to reasonable restrictions, matching the expected answer. It stays on topic and adds relevant detail without deviating. The listed restrictions and citation of Article 19 are supported by the provided Constitution excerpts, indicating strong grounding in the retrieved sources."
+    },
+    {
+      "id": "q13",
+      "question": "What Pakistani law establishes the offence of unauthorized access to a computer system?",
+      "category": "multi_document",
+      "correctness": 0.96,
+      "relevance": 0.94,
+      "groundedness": 0.91,
+      "reason": "The assistant correctly identifies PECA as the law creating the offence of unauthorized access, matching the expected answer. The response stays on topic and provides only pertinent details. It cites specific sections and pages from PECA, which plausibly support the claim, showing good grounding without apparent fabrication."
+    },
+    {
+      "id": "q14",
+      "question": "What does Pakistani law say about a hypothetical offence created by a fictional law called the Digital Crimes Act 2026?",
+      "category": "no_answer",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "groundedness": 1.0,
+      "reason": "The response correctly states that the Digital Crimes Act 2026 is not found in the provided corpus, directly answers the question, and cites the supplied documents to support the claim."
+    },
+    {
+      "id": "q15",
+      "question": "What does the Pakistan Penal Code say about a fictional Section 9999?",
+      "category": "edge_case",
+      "correctness": 1.0,
+      "relevance": 1.0,
+      "groundedness": 1.0,
+      "reason": "The answer correctly states that Section 9999 is not present in the provided Pakistan Penal Code, directly addresses the question without extraneous information, and cites the retrieved sources that confirm the absence of such a section."
+    }
+  ]
+}

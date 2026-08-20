@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     CHROMA_PERSIST_DIRECTORY: str = "data/chroma_db"
     CHROMA_COLLECTION_NAME: str = "pakistan_law"
 
-    RETRIEVAL_K: int = 5
+    RETRIEVAL_K: int = 10
 
     model_config = SettingsConfigDict(
         env_file=BASE_DIR / ".env",

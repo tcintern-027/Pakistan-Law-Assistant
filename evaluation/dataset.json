@@ -1,0 +1,175 @@
+[
+  {
+    "id": "q01",
+    "question": "What does Article 10A of the Constitution of Pakistan provide?",
+    "expected_answer": "Article 10A provides the right to a fair trial and due process.",
+    "key_facts": [
+      "Article 10A",
+      "fair trial",
+      "due process"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q02",
+    "question": "What is Section 302 of the Pakistan Penal Code?",
+    "expected_answer": "Section 302 provides punishments for qatl-i-amd, including death as qisas and other punishments specified by law.",
+    "key_facts": [
+      "Section 302",
+      "qatl-i-amd",
+      "death as qisas"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q03",
+    "question": "What does PECA say about real-time collection of information?",
+    "expected_answer": "Section 39 of PECA allows a court, under specified conditions, to order real-time collection or recording of information for a specific criminal investigation, subject to statutory time limits.",
+    "key_facts": [
+      "Section 39",
+      "real-time collection",
+      "court order",
+      "criminal investigation",
+      "seven days"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q04",
+    "question": "What fundamental right is protected by Article 14 of the Constitution of Pakistan?",
+    "expected_answer": "Article 14 protects the dignity of man and, subject to law, the privacy of home.",
+    "key_facts": [
+      "Article 14",
+      "dignity of man",
+      "privacy of home"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q05",
+    "question": "What is the punishment provided under Section 379 of the Pakistan Penal Code?",
+    "expected_answer": "Section 379 provides punishment for theft.",
+    "key_facts": [
+      "Section 379",
+      "theft"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q06",
+    "question": "What does PECA provide regarding unauthorized access to information systems?",
+    "expected_answer": "PECA criminalizes unauthorized access to an information system or data and provides the applicable punishment.",
+    "key_facts": [
+      "PECA",
+      "unauthorized access",
+      "information system",
+      "data"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q07",
+    "question": "What is a contract under the Contract Act 1872?",
+    "expected_answer": "A contract is an agreement enforceable by law.",
+    "key_facts": [
+      "Contract Act 1872",
+      "agreement",
+      "enforceable by law"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q08",
+    "question": "What are the requirements for a valid contract under the Contract Act 1872?",
+    "expected_answer": "A valid contract requires the elements specified by the Contract Act, including competent parties, free consent, lawful consideration and lawful object, subject to the statutory requirements.",
+    "key_facts": [
+      "competent parties",
+      "free consent",
+      "lawful consideration",
+      "lawful object"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q09",
+    "question": "How does the right to a fair trial under Article 10A relate to criminal proceedings under the Pakistan Penal Code?",
+    "expected_answer": "Article 10A establishes the constitutional right to fair trial and due process, while the Pakistan Penal Code defines offences and punishments.",
+    "key_facts": [
+      "Article 10A",
+      "fair trial",
+      "due process",
+      "Pakistan Penal Code",
+      "offences",
+      "punishments"
+    ],
+    "category": "multi_document"
+  },
+  {
+    "id": "q10",
+    "question": "How do PECA and the Constitution address privacy and digital information?",
+    "expected_answer": "The Constitution protects relevant fundamental rights such as dignity and privacy, while PECA establishes offences and investigative mechanisms concerning information systems and electronic data.",
+    "key_facts": [
+      "Constitution",
+      "privacy",
+      "PECA",
+      "electronic data",
+      "information systems"
+    ],
+    "category": "multi_document"
+  },
+  {
+    "id": "q11",
+    "question": "What is the relationship between an agreement and a contract under the Contract Act 1872?",
+    "expected_answer": "An agreement is a broader concept, while a contract is an agreement enforceable by law.",
+    "key_facts": [
+      "agreement",
+      "contract",
+      "enforceable by law"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q12",
+    "question": "What does the Constitution of Pakistan say about freedom of speech?",
+    "expected_answer": "The Constitution recognizes freedom of speech and expression subject to the limitations provided by law.",
+    "key_facts": [
+      "freedom of speech",
+      "freedom of expression",
+      "limitations"
+    ],
+    "category": "direct"
+  },
+  {
+    "id": "q13",
+    "question": "What Pakistani law establishes the offence of unauthorized access to a computer system?",
+    "expected_answer": "The Prevention of Electronic Crimes Act (PECA) addresses unauthorized access to information systems.",
+    "key_facts": [
+      "PECA",
+      "unauthorized access",
+      "information system"
+    ],
+    "category": "multi_document"
+  },
+  {
+    "id": "q14",
+    "question": "What does Pakistani law say about a hypothetical offence created by a fictional law called the Digital Crimes Act 2026?",
+    "expected_answer": "The provided legal corpus does not contain a Digital Crimes Act 2026, so the assistant should state that the information is unavailable rather than inventing an answer.",
+    "key_facts": [
+      "not in corpus",
+      "no fabricated answer",
+      "insufficient information"
+    ],
+    "category": "no_answer"
+  },
+  {
+    "id": "q15",
+    "question": "What does the Pakistan Penal Code say about a fictional Section 9999?",
+    "expected_answer": "The provided Pakistan Penal Code corpus does not establish a Section 9999, so the assistant should not fabricate its contents.",
+    "key_facts": [
+      "Section 9999",
+      "not in corpus",
+      "no fabricated answer"
+    ],
+    "category": "edge_case"
+  }
+]
