@@ -435,9 +435,9 @@ Explicit references such as Article 10A and Section 302 are detected directly fr
 
 This produced the following improvement:
 
-    Correctness:   73.33% -> 76.13%
-    Relevance:     83.80% -> 88.20%
-    Groundedness:  77.13% -> 82.07%
+    Correctness:   68.07% -> 76.13%
+    Relevance:     86.40% -> 88.20%
+    Groundedness:  92.40% -> 82.07%
 
 ## Example Legal Queries
 
